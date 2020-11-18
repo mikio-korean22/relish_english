@@ -1,0 +1,54 @@
+<div class = "question_index">
+    <div class ="container">
+        <div class = "row">
+            <div class = "col-md-8">
+                <h2>問題一覧</h2>
+                <div class = "container">
+                    <div class = "row">
+                        <div class = "beginner_question col-sm-6 each_link">
+                            <img class="image d-block w-100" src="/assets/beginner_image.jpg" alt="First slide">
+                            <%= link_to "初級", beginners_path, class: "font" %>
+                        </div>
+                        
+                        <div class = "question_explanation col-sm-6">
+                            <p>こちらは、主に入門者、初級者向けの問題です。TOEICの目安としては、およそ４００点までを目標
+                            としております。比較的難易度も低く、英語を勉強され始めた方向けです。</p>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class = "container">
+                    <div class = "row">
+                        <div class = "intermediate_question col-sm-6 each_link">
+                            <img class="image d-block w-100" src="/assets/upper_image.jpg" alt="First slide">
+                            <%= link_to "中級", intermediates_path, class: "font" %>
+                        </div>
+                        <div class = "question_explanation col-sm-6">
+                            <p>こちらは、初級レベルをだいたいわかるようになってきた中級者向けの問題です。
+                            TOEICでは、６５０店程度を目安としております。また、言葉に関しても、日常生活で
+                            頻繁に出てくるような言葉や文法が数多く出てきます。</p>
+                        </div>
+                    </div>
+                </div>
+                        
+                <div class = "container">
+                    <div class = "row">
+                        <div class = "upper_question col-sm-6 each_link">
+                            <img class="image d-block w-100" src="/assets/intermediate_image.jpg" alt="First slide">
+                            <%= link_to "上級", uppers_path, class: "font" %>
+                        </div>
+                        
+                        <div class = "question_explanation col-sm-6">
+                            <p>こちらは、上級者向けの問題です。TOEICでは、６５０点以上を目安としており、
+                            ニュースや新聞、小説など多方面で使われている言葉や文法の問題を解くことができます。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class = "sub_area col-md-4">
+                <%= render 'layouts/asidebar' %>
+            </div>
+        </div>
+    </div>
+</div>

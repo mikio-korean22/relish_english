@@ -1,0 +1,94 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 users_show_title">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="image d-block w-100" src="/assets/person-smartphone-office-table.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="image d-block w-100" src="/assets/person-smartphone-office-table.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="image d-block w-100" src="/assets/person-smartphone-office-table.jpg" alt="First slide">
+                </div>
+              </div>
+            </div>
+            <p>こんにちは、 <%= current_user.name %>さん！</p>
+        </div>
+        
+        <div class = "main_contents_show col-md-8">
+            <h2>問題に挑戦</h2>
+            
+            <div class = "container">
+                <div class = "row">
+                    <div class = "question_beginner col-md-4 each_link">
+                        <div class = "beginner_question">
+                            <img class="image d-block w-100" src="/assets/beginner_image.jpg" alt="First slide">
+                            <%= link_to "初級", beginners_path, class: "font" %>
+                        </div>
+                        
+                        <p>こちらは、主に入門者、初級者向けの問題です。TOEICの目安としては、およそ４００点までを目標
+                            としております。比較的難易度も低く、英語を勉強され始めた方向けです。</p>
+                    </div>
+                    
+                    <div class = "question_intermediate col-md-4 each_link">
+                        <div class = "intermediate_question">
+                            <img class="image d-block w-100" src="/assets/upper_image.jpg" alt="First slide">
+                            <%= link_to "中級", intermediates_path, class: "font" %>
+                        </div>
+                        
+                        <p>こちらは、初級レベルをだいたいわかるようになってきた中級者向けの問題です。
+                            TOEICでは、６５０店程度を目安としております。また、言葉に関しても、日常生活で
+                            頻繁に出てくるような言葉や文法が数多く出てきます。</p>
+                    </div>
+                    
+                    <div class = "question_upper col-md-4 each_link">
+                        <div class = "beginner_question">
+                            <img class="image d-block w-100" src="/assets/intermediate_image.jpg" alt="First slide">
+                            <%= link_to "上級", uppers_path, class: "font" %>
+                        </div>
+                        
+                        <p>こちらは、上級者向けの問題です。TOEICでは、６５０点以上を目安としており、
+                            ニュースや新聞、小説など多方面で使われている言葉や文法の問題を解くことができます。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>おすすめの参考資料</h2>
+            
+            <div class = "container">
+                <div class = "row">
+                    <div class = "material_recommendation col-md-6 each_link">
+                        <div class = "material1">
+                            <img class="image" src="/assets/person-smartphone-office-table.jpg" alt="First slide">
+                            <p>explanationexplanationex　planationexplanatione　xplanationexplanatione　xplanationexplanatione　xplanation</p>
+                        </div>
+                        
+                        <div class = "material3">
+                            <img class="image" src="/assets/person-smartphone-office-table.jpg" alt="First slide">
+                            <p>explanationexplanationex　planationexplanatione　xplanationexplanatione　xplanationexplanatione　xplanation</p>
+                        </div>
+                    </div>
+                    
+                    <div class = "material_recommendation col-md-6 each_link">
+                        <div class = "material1">
+                            <img class="image" src="/assets/person-smartphone-office-table.jpg" alt="First slide">
+                            <p>explanationexplanationex　planationexplanatione　xplanationexplanatione　xplanationexplanatione　xplanation</p>
+                        </div>
+                        
+                        <div class = "material4">
+                            <img class="image" src="/assets/person-smartphone-office-table.jpg" alt="First slide">
+                            <p>explanationexplanationex　planationexplanatione　xplanationexplanatione　xplanationexplanatione　xplanation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class = "show_sub col-md-4">
+            <%= render 'layouts/asidebar' %>
+        </div>
+    </div>
+</div>
+

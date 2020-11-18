@@ -1,0 +1,28 @@
+<div class = "container">
+    <div class = "row">
+        <div class = "question_contents col-sm-8">
+            <h2 style="font-size: 30px"><%= @quiz.content %></h2>
+            
+            <% @questions.each do |question| %>
+                <ul>
+                    <li><%= question.content %></li>
+                    <ul>
+                        <li>１：<%= question.choice_1 %></li>
+                        <li>２：<%= question.choice_2 %></li>
+                        <li>３：<%= question.choice_3 %></li>
+                        <li>４：<%= question.choice_4 %></li>
+                    </ul>
+                </ul>
+                
+            <% end %>
+            
+            <div class = "answer_button">
+                <%= link_to "回答", samples_sample_answer_path, class: "btn btn-primary" %>
+            </div>
+        </div>
+        
+        <div class = "sub col-sm-4">
+            <%= render 'layouts/asidebar' %>
+        </div>
+    </div>
+</div>

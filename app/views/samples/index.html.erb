@@ -1,0 +1,15 @@
+<div class = "container">
+    <div class = "row">
+        <div class = "col-sm-8 sample_question">
+            <h2>初級問題（トライアル）</h2>
+            <% @quizzes.each do |quiz| %>
+                <ul>
+                    <li><%= link_to quiz.content, sample_path(quiz.id) %></li>
+                </ul>
+            <% end %>
+        </div>
+        <div class = "col-sm-4">
+            <%= render 'layouts/asidebar' %>
+        </div>
+    </div>
+</div>

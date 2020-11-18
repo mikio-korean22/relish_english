@@ -1,0 +1,53 @@
+<% if logged_in? %>
+    <div class = "sub_area">
+        <div class="list-materials">
+            <div class="list-title">試験について</div>
+            <ul class="ichiran">
+                <li class="nav-item"><%= link_to 'TOEIC', toppages_examination_path, class: 'nav-link' %></li>
+                <li class="nav-item"><%= link_to 'TOEFL', toppages_examination_path, class: 'nav-link' %></li>
+                <li class="nav-item"><%= link_to 'IELTS', toppages_examination_path, class: 'nav-link' %></li>
+                <li class="nav-item"><%= link_to 'FCE', toppages_examination_path, class: 'nav-link' %></li>
+            </ul>
+        </div>
+    
+      　<div class="list-materials">
+            <div class="list-title">問題を解く</div>
+            <ul class="ichiran">
+              <li><%= link_to "初級", beginners_path %></li>
+              <li><%= link_to "中級", intermediates_path %></li>
+              <li><%= link_to "上級", uppers_path %></li>
+            </ul>
+        </div>
+        
+        <div class="list-materials" style = "margin-top: 45px;">
+            <div class="list-title">学習参考資料</div>
+            <ul class="ichiran">
+                <li class="nav-item"><%= link_to 'TOEIC', users_reference_path, class: 'nav-link' %></li>
+                <li class="nav-item"><%= link_to 'TOEFL', users_reference_path, class: 'nav-link' %></li>
+                <li class="nav-item"><%= link_to 'IELTS', users_reference_path, class: 'nav-link' %></li>
+                <li class="nav-item"><%= link_to 'FCE', users_reference_path, class: 'nav-link' %></li>
+            </ul>
+        </div>
+    </div>
+<% else %>
+    <div class = "sub_area">
+        <div class="list-materials">
+            <div class="list-title">試験について</div>
+            <ul class="ichiran">
+                <li class="nav-item"><%= link_to 'TOEIC', toppages_examination_path, class: 'nav-link' %></li>
+                <li class="nav-item"><%= link_to 'TOEFL', toppages_examination_path, class: 'nav-link' %></li>
+                <li class="nav-item"><%= link_to 'IELTS', toppages_examination_path, class: 'nav-link' %></li>
+                <li class="nav-item"><%= link_to 'FCE', toppages_examination_path, class: 'nav-link' %></li>
+            </ul>
+        </div>
+    
+       <div class="list-materials">
+            <div class="list-title">問題を解く</div>
+            <ul class="ichiran">
+                <ul>
+                    <li id="trial_sub"><%= link_to "初級問題（トライアル）", samples_path, class: "nav-link" %></li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+<% end %>

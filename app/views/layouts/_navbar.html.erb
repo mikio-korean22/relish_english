@@ -1,0 +1,27 @@
+<header class="mb-4">
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <a class="navbar-brand" href="/">Relish English</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon toggle_icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <% if logged_in? %>
+            <li class="nav-item"><%= link_to '概要', toppages_about_path, class: 'nav-link' %></li>
+            <li class="nav-item"><%= link_to '試験について', toppages_examination_path, class: 'nav-link' %></li>
+            <li class="nav-item"><%= link_to '問題を解く', users_question_index_path, class: 'nav-link' %></li>
+            <li class="nav-item"><%= link_to '学習参考資料', users_reference_path, class: 'nav-link' %></li>
+            <li class="nav-item"><%= link_to '学習サイト', users_site_path, class: 'nav-link' %></li>
+            <li class="nav-item"><%= link_to 'ログアウト', logout_path, method: :delete, class: 'nav-link' %></li>
+          <% else %>
+            <li class="nav-item"><%= link_to '概要', toppages_about_path, class: 'nav-link' %></li>
+          <li class="nav-item"><%= link_to '試験について', toppages_examination_path, class: 'nav-link' %></li>
+          <li class="nav-item"><%= link_to "問題を解く", samples_path, class: "nav-link" %></li>
+          <li class="nav-item"><%= link_to 'ログイン', login_path, class: 'nav-link' %></li>
+          <li class="nav-item"><%= link_to '新規登録', signup_path, class: 'nav-link' %></li>
+        <% end %>
+      </ul>
+    </div>
+  </nav>
+</header>

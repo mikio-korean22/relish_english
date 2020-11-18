@@ -1,0 +1,27 @@
+// Place all the styles related to the sample controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.sample_question{
+    margin-top: 30px;
+    h2{
+        border-bottom: 1px solid #797979;
+        @media(max-width: 549px){
+            font-size: 25px;
+        }
+    }
+    
+    ul{
+        margin-top: 40px;
+        li{
+            font-size: 20px;
+            list-style: none;
+        }
+    }
+}
+
+.question_contents{
+    h2{
+        font-size: 25px;
+    }
+}

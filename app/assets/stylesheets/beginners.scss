@@ -1,0 +1,41 @@
+// Place all the styles related to the beginners controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.beginner_question{
+    margin-top: 30px;
+    h2{
+        border-bottom: 1px solid #797979;
+    }
+    
+    ul{
+        margin-top: 40px;
+        li{
+            font-size: 20px;
+            list-style: none;
+        }
+    }
+}
+
+.question_contents{
+    h2{
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 40px;
+    }
+    
+    ul{
+        margin-top: 30px;
+        li{
+            list-style: none;
+            font-size: 20px;
+            letter-spacing: 5px;
+        }
+    }
+    
+    .answer_button{
+        margin-top: 40px;
+        
+    }
+}
