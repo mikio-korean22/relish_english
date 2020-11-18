@@ -51,6 +51,6 @@ production:
   adapter: postgresql
   encoding: unicode
   pool: 5
-  database: message-board_production
-  username: message-board
-  password: <%= ENV['MESSAGE-BOARD_DATABASE_PASSWORD'] %>
+  database: whispering-inlet-90265_production
+  username: whispering-inlet-90265
+  password: <%= ENV['WHISPERING-INLET-90265_DATABASE_PASSWORD'] %>
