@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2020_11_16_034134) do
 
   create_table "questions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.bigint "quiz_id", null: false
+    t.bigint "quiz_id"
     t.string "content"
     t.string "choice_1"
     t.string "choice_2"
@@ -22,13 +22,15 @@ ActiveRecord::Schema.define(version: 2020_11_16_034134) do
     t.string "correct_answer"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "explanation"
     t.index ["quiz_id"], name: "index_questions_on_quiz_id"
   end
 
-  create_table "quizzes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "quizzes", id: :bigint, default: 0, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "level_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
