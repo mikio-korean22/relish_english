@@ -3,7 +3,7 @@ class BeginnersController < ApplicationController
   before_action :require_user_logged_in
   
   def index
-    @quizzes = Quiz.where(level_id: 1)
+    @quizzes = Quiz.where(level: 1)
   end
 
   def show

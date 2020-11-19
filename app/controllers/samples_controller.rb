@@ -1,6 +1,6 @@
 class SamplesController < ApplicationController
   def index
-    @quizzes = Quiz.where(level_id: 4)
+    @quizzes = Quiz.where(level: 4)
   end
 
   def show
