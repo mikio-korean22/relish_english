@@ -3,18 +3,36 @@
         <div class = "question_contents col-sm-8">
             <h2 style="font-size: 30px"><%= @quiz.content %></h2>
             
-            <% @questions.each do |question| %>
                 <ul>
-                    <li><%= question.content %></li>
+                    <li>学校は英語で？</li>
                     <ul>
-                        <li>１：<%= question.choice_1 %></li>
-                        <li>２：<%= question.choice_2 %></li>
-                        <li>３：<%= question.choice_3 %></li>
-                        <li>４：<%= question.choice_4 %></li>
+                        <li>１：house</li>
+                        <li>２：school</li>
+                        <li>３：picture</li>
+                        <li>４：lion</li>
                     </ul>
                 </ul>
                 
-            <% end %>
+                <ul>
+                    <li>家は英語で？</li>
+                    <ul>
+                        <li>１：house</li>
+                        <li>２：school</li>
+                        <li>３：picture</li>
+                        <li>４：lion</li>
+                    </ul>
+                </ul>
+                
+                <ul>
+                    <li>写真は英語で？</li>
+                    <ul>
+                        <li>１：house</li>
+                        <li>２：school</li>
+                        <li>３：picture</li>
+                        <li>４：lion</li>
+                    </ul>
+                </ul>
+                
             
             <div class = "answer_button">
                 <%= link_to "回答", samples_sample_answer_path, class: "btn btn-primary" %>
