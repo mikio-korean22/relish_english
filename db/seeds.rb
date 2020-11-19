@@ -12,6 +12,10 @@ Quiz.create(content: "初級問題２", level: 1)
 Quiz.create(content: "中級問題１", level: 2)
 Quiz.create(content: "上級問題１", level: 3)
 
+Question.create(quiz_id: 1, content: "学校は英語で？", choice_1: "house", choice_2: "shcool", choice_3: "picture", choice_4: "lion", correct_answer: "school", explanation: "学校は英語で「school」なので、正解は「２」")
+Question.create(quiz_id: 1, content: "家は英語で？", choice_1: "house", choice_2: "shcool", choice_3: "picture", choice_4: "lion", correct_answer: "house", explanation: "家は英語で「house」なので、正解は「１」")
+Question.create(quiz_id: 1, content: "写真は英語で？", choice_1: "house", choice_2: "shcool", choice_3: "picture", choice_4: "lion", correct_answer: "picture", explanation: "写真は英語で「picture」なので、正解は「３」")
+
 Question.create(quiz_id: 2, content: "学校は英語で？", choice_1: "house", choice_2: "shcool", choice_3: "picture", choice_4: "lion", correct_answer: "school", explanation: "学校は英語で「school」なので、正解は「２」")
 Question.create(quiz_id: 2, content: "家は英語で？", choice_1: "house", choice_2: "shcool", choice_3: "picture", choice_4: "lion", correct_answer: "house", explanation: "家は英語で「house」なので、正解は「１」")
 Question.create(quiz_id: 2, content: "写真は英語で？", choice_1: "house", choice_2: "shcool", choice_3: "picture", choice_4: "lion", correct_answer: "picture", explanation: "写真は英語で「picture」なので、正解は「３」")
