@@ -48,9 +48,10 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  adapter: postgresql
-  encoding: unicode
-  pool: 5
-  database: whispering-inlet-90265_production
-  username: whispering-inlet-90265
-  password: <%= ENV['WHISPERING-INLET-90265_DATABASE_PASSWORD'] %>
+  production:
+    adapter: postgresql
+    encoding: unicode
+    pool: 5
+    database: whispering-inlet-90265_production
+    username: whispering-inlet-90265
+    password: <%= ENV['WHISPERING-INLET-90265_DATABASE_PASSWORD'] %>
