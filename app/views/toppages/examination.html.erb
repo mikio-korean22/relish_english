@@ -7,14 +7,14 @@
             
                 <div class="tab" id="js-tab">
                     <div class="tab_nav">
-                        <a href="" class="tab_nav_item is-active" data-nav="0">TOEIC</a>
-                        <a href="" class="tab_nav_item" data-nav="1">TOEFL</a>
-                        <a href="" class="tab_nav_item" data-nav="2">IELTS</a>
-                        <a href="" class="tab_nav_item" data-nav="3">FCE</a>
+                        <a href="#toeic" class="tab_nav_item is-active" data-nav="0">TOEIC</a>
+                        <a href="#toefl" class="tab_nav_item" data-nav="1">TOEFL</a>
+                        <a href="#ielts" class="tab_nav_item" data-nav="2">IELTS</a>
+                        <a href="#fce" class="tab_nav_item" data-nav="3">FCE</a>
                     </div>
             
                     <div class="tab_contents">
-                        <div class="tab_contents_item" data-content="0">
+                        <div class="tab_contents_item" data-content="0" id="toeic" style="border: none;">
                             <p>TOEIC® Programは、アメリカにある非営利テスト開発機関であるEducational Testing Service（ETS）が開発・制作している
                             英語コミュニケーション能力の測定テストです。TOEIC® Programは特定の文化を知らないと理解できない表現を排除すること
                             で誰もが公平に受けることができるテストとなっており、英語力測定テストのグローバルスタンダードとして世界約160ヶ国で実施、
@@ -55,7 +55,7 @@
                             また、試験会場は、別途お送りする受験票にてご案内します。試験会場によっては、アクセス手段が限られる（車・バイク・自転車等での来場禁止など）ことがありますので、受験票記載の案内に従って、試験会場までお越しください。</p>
                         </div>
             
-                        <div class="tab_contents_item" data-content="1">
+                        <div class="tab_contents_item" data-content="1"  id="toefl">
                             <p>TOEFL®テストは「英語を母国語としない人の英語力」を判定するテストです。
                             英語圏の大学・大学院の多くが留学希望者の英語能力を測定する際に使用しているので、
                             海外留学や海外大進学などのグローバルな進路を目指す中学生・高校生の皆さんにとっては
@@ -100,7 +100,7 @@
                             アカウントの氏名が完全に一致しない場合は、テストを受けることができず、受験料も返金されません。</p>
                         </div>
             
-                        <div class="tab_contents_item" data-content="2">
+                        <div class="tab_contents_item" data-content="2" id="ielts">
                             <p>IELTS(アイエルツ)とは、International English Language Testing Systemの略称で、
                             海外留学や海外の現地大学に通う時に求められる英語の検定試験です。
                             全世界で140万人以上の人が受験している英語の試験です。
@@ -152,7 +152,7 @@
                             万が一、パスポート��忘れてしまった場合は受験できません。パスポートを忘れないようにしましょう。</p>
                         </div>
                         
-                        <div class="tab_contents_item" data-content="3">
+                        <div class="tab_contents_item" data-content="3" id="fce">
                             <p>試験を統括しているケンブリッジ大学の所在地、
                             イギリスだけでなく、オーストラリア、カナダなど多くの国の大学をはじめ、
                             様々な教育機関や企業に認められている国際レベルの英語検定試験です。</p>
@@ -204,70 +204,3 @@
     </div>
 </div>
                 
-<script type="text/javascript">
-    const $tab = document.getElementById("js-tab");
-    const $nav = $tab.querySelectorAll('[data-nav]');
-    const $content = $tab.querySelectorAll('[data-content]');
-
-    const init = () => {
-        $content[0].style.display = "block";
-    };
-    init();
-
-    const handleClick = (e) => {
-        e.preventDefault();
-
-        const $this = e.target;
-        const targetVal = $this.dataset.nav;
-        console.log('targetVal', targetVal);
-
-        let index = 0;
-        while (index < $nav.length) {
-            $content[index].style.display = "none";
-            $nav[index].classList.remove('is-active');
-            index++;
-        }
-
-        $tab.querySelectorAll('[data-content="' + targetVal + '"]')[0].style.display = "block";
-        $nav[targetVal].classList.add('is-active');
-    };
-
-    let index = 0;
-    while (index < $nav.length) {
-        $nav[index].addEventListener("click", (e) => handleClick(e));
-        index++;
-    };
-    
-    const $tab2 = document.getElementById("js-tab2");
-    const $nav2 = $tab2.querySelectorAll('[data-nav2]');
-    const $content2 = $tab2.querySelectorAll('[data-content2]');
-
-    const init2 = () => {
-        $content2[0].style.display = "block";
-    };
-    init2();
-
-    const handleClick2 = (e) => {
-        e.preventDefault();
-
-        const $this = e.target;
-        const targetVal = $this.dataset.nav2;
-        console.log('targetVal', targetVal);
-
-        let index2 = 0;
-        while (index2 < $nav2.length) {
-            $content2[index2].style.display = "none";
-            $nav2[index2].classList.remove('is-active');
-            index2++;
-        }
-
-        $tab2.querySelectorAll('[data-content2="' + targetVal + '"]')[0].style.display = "block";
-        $nav2[targetVal].classList.add('is-active');
-    };
-
-    let index2 = 0;
-    while (index2 < $nav2.length) {
-        $nav2[index2].addEventListener("click", (e) => handleClick2(e));
-        index2++;
-    };
-</script>

@@ -78,7 +78,7 @@ p {
 
 .main-contents_examination{
     h2{
-        border-bottom: 1px solid #797979;;
+        border-bottom: 1px solid #797979;
     }
     #topik_examination{
         margin-top: 60px;
@@ -103,8 +103,6 @@ p {
         }
     
         .tab_nav_item.is-active {
-            background-color: #7AC5CD;
-            color: #fff;
         }
     
         .tab_contents {
@@ -117,8 +115,10 @@ p {
                 margin-top: 40px;
             }
             .tab_contents_item {
-            display: none;
+                border-top: 1px solid #797979;
+                margin-bottom: 50px;
             p{
+                
                 line-height: 40px;
             }
                 table {
