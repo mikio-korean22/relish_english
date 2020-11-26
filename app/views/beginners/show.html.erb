@@ -2,23 +2,24 @@
     <div class = "row">
         <div class = "question_contents col-sm-8">
             <h2><%= @quiz.content %></h2>
-            
+            <%= form_tag answer_path, method: :get do |f| %>
             <% @questions.each do |question| %>
                 <ul>
                     <li><%= question.content %></li>
+                    
                     <ul>
-                        <li>１：<%= question.choice_1 %></li>
-                        <li>２：<%= question.choice_2 %></li>
-                        <li>３：<%= question.choice_3 %></li>
-                        <li>４：<%= question.choice_4 %></li>
+                        <li><%= radio_button_tag question.id, question.choice_1 %><%= question.choice_1%></li>
+                        <li><%= radio_button_tag question.id, question.choice_2 %><%= question.choice_2%></li>
+                        <li><%= radio_button_tag question.id, question.choice_3 %><%= question.choice_3%></li>
+                        <li><%= radio_button_tag question.id, question.choice_4 %><%= question.choice_4%></li>
+                        
                     </ul>
                 </ul>
                 
             <% end %>
             
-            <div class = "answer_button">
-                <%= link_to "回答", answer_path, class: "btn btn-primary" %>
-            </div>
+            <%= submit_tag "回答"%>
+            <% end %>
         </div>
         
         <div class = "sub col-sm-4">

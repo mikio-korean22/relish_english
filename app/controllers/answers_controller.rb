@@ -7,5 +7,8 @@ class AnswersController < ApplicationController
     @quizzes = Quiz.all
     @question = Question.find(params[:id])
     @questions = @quiz.questions
+    @answers = @questions.map do |question|
+      params[question.id.to_s]
+    end
   end
 end
