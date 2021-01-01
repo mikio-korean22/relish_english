@@ -25,3 +25,21 @@
         font-size: 25px;
     }
 }
+
+.question_answer{
+    ul{
+        li{
+            font-weight: bold;
+            span{
+                color: red;
+            }
+        }
+    }
+    
+    .recommendation{
+        padding: 30px;
+        span{
+            margin-bottom: 20px;
+        }
+    }
+}

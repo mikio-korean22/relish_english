@@ -54,6 +54,7 @@ header .navbar-toggler{
 
 header .nav-link{
     margin-right: 30px;
+    font-weight: bold;
     @media(max-width: 768px){
         font-size: 10px;
         margin-right: 10px;
@@ -127,6 +128,7 @@ footer{
 
 footer .nav-item a{
     color: #616161;
+    font-weight: bold;
 }
 
 .main_question h2{
