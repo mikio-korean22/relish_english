@@ -51,9 +51,9 @@
                 <li class = "question_sentence">問題６：<%= @questions.last.content %></li>
                 <li>あなたの答え：<%= @answers[6] %></li>
                 <% if @answers[5] == @questions.last.correct_answer %>
-                    <li>正解です。</li>
+                    <li style="color: blue;">正解です。</li>
                 <% elsif %>
-                    <li>不正解です。</li>
+                    <li style="color: red;">不正解です。</li>
                 <% end %>
                 <li><%= @questions.last.explanation %></li>
             </ul>
