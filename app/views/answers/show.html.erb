@@ -6,45 +6,45 @@
                 <li class = "question_sentence">問題１：<%= @questions.first.content %></li>
                 <li>あなたの答え：<%= @answers[0] %></li>
                 <% if @answers[0] == @questions.first.correct_answer %>
-                    <li>正解です。</li>
+                    <li style="color: blue;">正解です。</li>
                 <% elsif %>
-                    <li>不正解です。</li>
+                    <li style="color: red;">不正解です。</li>
                 <% end %>
                 <li><%= @questions.first.explanation %></li>
                 
                 <li class = "question_sentence">問題２：<%= @questions.second.content %></li>
                 <li>あなたの答え：<%= @answers[1] %></li>
                 <% if @answers[1] == @questions.second.correct_answer %>
-                    <li>正解です。</li>
+                    <li style="color: blue;">正解です。</li>
                 <% elsif %>
-                    <li>不正解です。</li>
+                    <li style="color: red;">不正解です。</li>
                 <% end %>
                 <li><%= @questions.second.explanation %></li>
                 
                 <li class = "question_sentence">問題３：<%= @questions.third.content %></li>
                 <li>あなたの答え：<%= @answers[2] %></li>
                 <% if @answers[2] == @questions.third.correct_answer %>
-                    <li>正解です。</li>
+                    <li style="color: blue;">正解です。</li>
                 <% elsif %>
-                    <li>不正解です。</li>
+                    <li style="color: red;">不正解です。</li>
                 <% end %>
                 <li><%= @questions.third.explanation %></li>
                 
                 <li class = "question_sentence">問題４：<%= @questions.fourth.content %></li>
                 <li>あなたの答え：<%= @answers[3] %></li>
                 <% if @answers[3] == @questions.fourth.correct_answer %>
-                    <li>正解です。</li>
+                    <li style="color: blue;">正解です。</li>
                 <% elsif %>
-                    <li>不正解です。</li>
+                    <li style="color: red;">不正解です。</li>
                 <% end %>
                 <li><%= @questions.fourth.explanation %></li>
                 
                 <li class = "question_sentence">問題５：<%= @questions.fifth.content %></li>
                 <li>あなたの答え：<%= @answers[4] %></li>
                 <% if @answers[4] == @questions.fifth.correct_answer %>
-                    <li>正解です。</li>
+                    <li style="color: blue;">正解です。</li>
                 <% elsif %>
-                    <li>不正解です。</li>
+                    <li style="color: red;">不正解です。</li>
                 <% end %>
                 <li><%= @questions.fifth.explanation %></li>
                 
