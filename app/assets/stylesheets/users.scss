@@ -167,6 +167,80 @@
     }
 }
 
+.site{
+    h2{
+        border-bottom: 1px solid #797979;
+    }
+    .main_contents_reference{
+        margin-top: 50px;
+        text-align: center;
+        .reference_contents_1{
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            @media(max-width: 768px) {
+                flex-wrap: wrap;
+                text-align: center;
+            }
+            .reference_image{
+                @media(max-width: 768px) {
+                    width: 100%;
+                }
+                img{
+                     width: 300px;
+                   height: auto;
+                }
+            }
+            
+            .reference_explanation{
+                margin-top: 25px;
+                @media(max-width: 768px) {
+                    width: 100%;
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
+                p{
+                    width: 80%;
+                    margin: 0 auto;
+                }
+            }
+        }
+        
+        .reference_contents_2{
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            @media(max-width: 768px) {
+                flex-wrap: wrap;
+                text-align: center;
+            }
+            .reference_image{
+                @media(max-width: 768px) {
+                    width: 100%;
+                }
+                img{
+                    width: 300px;
+                   height: auto;
+                }
+            }
+            .reference_explanation{
+                p{
+                    margin-top: 15px;
+                    width: 80%;
+                    margin: 0 auto;
+                }
+            }
+            .explanation_2{
+                margin-top: 25px;
+                @media(max-width: 768px){
+                    order: 2;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
 .question_index{
     h2{
         border-bottom: 1px solid #797979;
