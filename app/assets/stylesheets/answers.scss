@@ -30,8 +30,10 @@
     
     .back_to_index{
         margin-top: 40px;
+        margin-left: 300px;
+        cursor: pointer;
         @media(max-width: 549px){
-            margin-left: 100px;
+            margin-left: 30px;
         }
     }
 }
