@@ -1,15 +1,12 @@
 <div class = "container">
     <div class = "row">
-        <div class = "col-sm-8 upper_question">
+        <div class = "upper_question">
             <h2>上級問題　一覧</h2>
             <% @quizzes.each do |quiz| %>
                 <ul>
                     <li><%= link_to quiz.content, upper_path(quiz.id) %></li>
                 </ul>
             <% end %>
-        </div>
-        <div class = "col-sm-4">
-            <%= render 'layouts/asidebar' %>
         </div>
     </div>
 </div>

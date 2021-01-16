@@ -44,7 +44,7 @@
     }
     
     img{
-        height: 30%;
+        height: 40%;
         width: auto;
         position: absolute;
         top: 330px;
@@ -66,13 +66,11 @@
 .merit_registration{
     text-align: center;
     margin-top: 30px;
-    .image_merit{
-        width: 60%;
-        height: auto;
-    }
-    
+    width: 100%;
+    background-color:#CCFFFF;
+    padding: 30px;
     h3{
-        margin-top: 20px;
+        margin-top: 40px;
         font-weight: bold;
         @media(max-width: 549px){
             font-size: 21px;
@@ -114,6 +112,7 @@
         
         h3{
             font-weight: bold;
+            margin-top: 60px;
             @media(max-width: 768px){
                 font-size: 25px;
             }

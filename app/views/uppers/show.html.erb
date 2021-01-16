@@ -1,6 +1,6 @@
 <div class = "container">
     <div class = "row">
-        <div class = "question_contents col-sm-8">
+        <div class = "question_contents">
             <h2><%= @quiz.content %></h2>
             <%= form_tag answer_path, method: :get do |f| %>
             <% @questions.each do |question| %>
@@ -20,10 +20,6 @@
             
             <%= submit_tag "回答"%>
             <% end %>
-        </div>
-        
-        <div class = "sub col-sm-4">
-            <%= render 'layouts/asidebar' %>
         </div>
     </div>
 </div>

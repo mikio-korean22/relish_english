@@ -6,7 +6,7 @@
             <p>こんにちは、 <%= current_user.name %>さん！</p>
         </div>
         
-        <div class = "main_contents_show col-md-8">
+        <div class = "main_contents_show">
             <h2>問題に挑戦</h2>
             
             <div class = "container">
@@ -68,10 +68,6 @@
                 </div>
             </div>
         </div>
-        
-        <div class = "show_sub col-md-4">
-            <%= render 'layouts/asidebar' %>
-        </div>
     </div>
 </div>
 
@@ -90,63 +86,57 @@
         <img class="image" src="/assets/relish_english_top.jpg" alt="First slide">
     </div>
 </div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class = "merit_registration">
-                <h2>登録をすると</h2>
-                <div class = "container">
-                    <div class = "row">
-                        <div class = "col-md-6 left">
-                            <div class = "first">
-                                <!--<img class="u-max-full-width image_merit" src="assets/person-smartphone-office-table.jpg" alt="First slide">-->
-                                <h3>無料で英語学習</h3>
-                                <p>英語を勉強するとなると、色々と費用がかかってしまいますが、Relish Englishは、全て無料で問題にチャレンジすることができます。</p>
-                            </div>
-                            
-                            <div class = "second">
-                                <!--<img class="u-max-full-width image_merit" src="assets/person-smartphone-office-table.jpg" alt="First slide">-->
-                                <h3>実践的な問題に挑戦できる</h3>
-                                <p>問題のレベルも初級から上級者向けまでより多種多様で自分に合った問題に無理なく挑戦することができます。</p>
-                            </div>
-                        </div>
-                        
-                        <div class = "col-md-6 right">
-                            <div class = "first">
-                                <!--<img class="u-max-full-width image_merit" src="assets/person-smartphone-office-table.jpg" alt="First slide">-->
-                                <h3>自分に合った資料が見つかる</h3>
-                                <p>英語には、様々な国際資格が存在しますが、Relish Englishでは、それぞれの資格に合った参考資料をご覧になることができます。</p>
-                            </div>
-                            
-                            <div class = "second">
-                                <!--<img class="u-max-full-width image_merit" src="assets/person-smartphone-office-table.jpg" alt="First slide">-->
-                                <h3>おすすめサイトが見つかる</h3>
-                                <p>また、英語学習にぴったりの様々なおすすめサイトを簡単に見つけることができます。</p>
-                            </div>
-                        </div>
+    <div class = "merit_registration">
+        <h2>登録をすると</h2>
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-md-6 left">
+                    <div class = "first">
+                        <!--<img class="u-max-full-width image_merit" src="assets/person-smartphone-office-table.jpg" alt="First slide">-->
+                        <h3>無料で英語学習</h3>
+                        <p>英語を勉強するとなると、色々と費用がかかってしまいますが、Relish Englishは、全て無料で問題にチャレンジすることができます。</p>
+                    </div>
+                    
+                    <div class = "second">
+                        <!--<img class="u-max-full-width image_merit" src="assets/person-smartphone-office-table.jpg" alt="First slide">-->
+                        <h3>実践的な問題に挑戦できる</h3>
+                        <p>問題のレベルも初級から上級者向けまでより多種多様で自分に合った問題に無理なく挑戦することができます。</p>
                     </div>
                 </div>
-            </div>
-            
-            <div class = "easy_registration">
-                <h2>登録は簡単！</h2>
-                <div class = "container">
-                    <div class = "row">
-                        <div class = "col-md-6 image_side">
-                            <img class="u-max-full-width image" src="assets/signup_page_image.png" alt="First slide">
-                        </div>
-                        
-                        <div class = "col-md-6 explanation_side">
-                            <p>登録時間はたったの<strong>３０秒！</strong><br>
-                            登録時には、「ログインユーザ名」「ログインパスワード」のみ！！<br>
-                            <%= link_to '今すぐ新規登録', signup_path, class: 'btn btn-primary' %>
-                            
-                        </div>
+                
+                <div class = "col-md-6 right">
+                    <div class = "first">
+                        <!--<img class="u-max-full-width image_merit" src="assets/person-smartphone-office-table.jpg" alt="First slide">-->
+                        <h3>自分に合った資料が見つかる</h3>
+                        <p>英語には、様々な国際資格が存在しますが、Relish Englishでは、それぞれの資格に合った参考資料をご覧になることができます。</p>
+                    </div>
+                    
+                    <div class = "second">
+                        <!--<img class="u-max-full-width image_merit" src="assets/person-smartphone-office-table.jpg" alt="First slide">-->
+                        <h3>おすすめサイトが見つかる</h3>
+                        <p>また、英語学習にぴったりの様々なおすすめサイトを簡単に見つけることができます。</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    
+    <div class = "easy_registration">
+        <h2>登録は簡単！</h2>
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-md-6 image_side">
+                    <img class="u-max-full-width image" src="assets/signup_page_image.png" alt="First slide">
+                </div>
+                
+                <div class = "col-md-6 explanation_side">
+                    <p>登録時間はたったの<strong>３０秒！</strong><br>
+                    登録時には、「ログインユーザ名」「ログインパスワード」のみ！！<br>
+                    <%= link_to '今すぐ新規登録', signup_path, class: 'btn btn-primary' %>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
 
 <% end %>
