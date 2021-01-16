@@ -36,6 +36,7 @@
     
     ul{
         margin-top: 30px;
+        margin-left: 100px;
         @media(max-width: 549px){
             padding-left: 8px;
         }
@@ -53,6 +54,7 @@
         margin-top: 40px;
         margin-left: 400px;
         border: none;
+        cursor: pointer;
         font-size: 30px;
         padding: 10px 30px;
         @media(max-width: 768px){
