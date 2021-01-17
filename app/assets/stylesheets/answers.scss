@@ -7,12 +7,23 @@
         font-weight: bold;
         text-align: center;
         margin-top: 50px;
+        margin-left: 120px;
+        @media(max-width: 768px){
+            margin-left: 0;
+        }
     }
     
     ul{
         margin-top: 50px;
+        margin-left: 100px;
+        @media(max-width: 768px){
+            margin-left: 40px;
+            margin-right: 50px;
+        }
         @media(max-width: 549px){
             padding-right: 30px;
+            margin-left: 0;
+            margin-right: 0;
         }
         li{
             list-style: none;
@@ -30,7 +41,7 @@
     
     .back_to_index{
         margin-top: 40px;
-        margin-left: 300px;
+        margin-left: 400px;
         cursor: pointer;
         @media(max-width: 549px){
             margin-left: 130px;
