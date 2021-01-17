@@ -4,6 +4,7 @@
             <h2><%= @quiz.content %></h2>
             <%= form_tag answer_path, method: :get do |f| %>
             <% @questions.each do |question| %>
+            <div class = "upper_question_content">
                 <ul>
                     <li><%= question.content %></li>
                     
@@ -12,10 +13,9 @@
                         <li><%= radio_button_tag question.id, question.choice_2 %>　<%= question.choice_2%></li>
                         <li><%= radio_button_tag question.id, question.choice_3 %>　<%= question.choice_3%></li>
                         <li><%= radio_button_tag question.id, question.choice_4 %>　<%= question.choice_4%></li>
-                        
                     </ul>
                 </ul>
-                
+              </div>
             <% end %>
             
             <%= submit_tag "回答", class: "answer_button"%>
