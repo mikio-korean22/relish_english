@@ -2,7 +2,7 @@
     <div class = "row">
         <div class = "question_contents_sample col-sm-8">
             <h2><%= @quiz.content %></h2>
-            
+            <div class = "question_content">
                 <ul>
                     <li>学校は英語で？</li>
                     <ul>
@@ -62,6 +62,7 @@
                         <li>４：tomorow</li>
                     </ul>
                 </ul>
+                </div>
             <div class = "answer_button">
                 <%= link_to "回答", samples_sample_answer_path, class: "btn btn-primary" %>
             </div>

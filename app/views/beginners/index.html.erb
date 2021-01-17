@@ -4,7 +4,7 @@
             <h2>初級問題　一覧</h2>
             <% @quizzes.each do |quiz| %>
                 <ul>
-                    <li><%= link_to quiz.content, beginner_path(quiz.id) %></li>
+                    <li><%= link_to quiz.content, beginner_path(quiz.id), class: "beginner_question_list" %></li>
                 </ul>
             <% end %>
         </div>

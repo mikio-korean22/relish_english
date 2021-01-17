@@ -19,6 +19,9 @@
             font-size: 20px;
             list-style: none;
             margin-left: 70px;
+            .beginner_question_list{
+                text-decoration: none;
+            }
         }
     }
 }
@@ -33,23 +36,23 @@
             font-size: 25px;
         }
     }
-    
-    ul{
-        margin-top: 30px;
+    .beginner_question_content{
         margin-left: 100px;
-        @media(max-width: 549px){
-            padding-left: 8px;
-        }
-        li{
-            list-style: none;
-            font-size: 20px;
-            letter-spacing: 5px;
+        ul{
+            margin-top: 30px;
             @media(max-width: 549px){
-                font-size: 11px;
+                padding-left: 8px;
+            }
+            li{
+                list-style: none;
+                font-size: 20px;
+                letter-spacing: 5px;
+                @media(max-width: 549px){
+                    font-size: 11px;
+                }
             }
         }
     }
-    
     .answer_button{
         margin-top: 40px;
         margin-left: 400px;

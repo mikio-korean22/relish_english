@@ -4,6 +4,7 @@
             <h2><%= @quiz.content %></h2>
             <%= form_tag answer_path, method: :get do |f| %>
             <% @questions.each do |question| %>
+            <div class = "beginner_question_content">
                 <ul>
                     <li><%= question.content %></li>
                     
@@ -15,7 +16,7 @@
                         
                     </ul>
                 </ul>
-                
+              </div>
             <% end %>
             
             <%= submit_tag "回答", class: "answer_button"%>
